@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(resim.jpg);
+    background-size:cover;
+}
+
+.sayfa{
+    background-color: rgb(56, 80, 96);
+    text-align: center;
+}
+.sayfa ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.sayfa ul li{
+    width: 150px;
+    margin: 14px;
+    padding: 14px;
+}
+
+.sayfa ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.active, .sayfa ul li:hover{
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.sayfa .fas{
+    margin-right: 8px;
+}
+
+.menu{
+    display: none;
+}
+
+.sayfa ul li:hover .menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(56, 80, 96);
+    margin-top: 15px;
+    margin-right:15px;
+    font-size: 12px;
+} 
+
+.sayfa ul li:hover .menu ul{
+    display: block;
+}
+.sayfa ul li:hover .menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(255, 255, 255);
+    background-color: transparent;
+    text-align: left;
+    border-radius: 0%;
+}
+
+.sayfa ul li:hover .menu ul li a:hover{
+    color: bisque ;
+}
